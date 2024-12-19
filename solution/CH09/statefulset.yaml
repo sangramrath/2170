@@ -13,20 +13,16 @@ spec:
       labels:
         app: mysql
     spec:
-      terminationGracePeriodSeconds: 10
       containers:
         - name: mysql
           image: mysql:5.7
           ports:
-            - name: tpc
+            - name: tcp
               protocol: TCP
               containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              valueFrom: 
-               secretKeyRef: 
-                key: ROOT_PASSWORD
-                name: mysqldbsecret
+              Value: strongpassword
           volumeMounts:
             - name: mysqldb-pvc
               mountPath: /var/lib/mysql
@@ -39,4 +35,5 @@ spec:
           - ReadWriteOnce
         resources:
           requests:
-            storage: 5Gi
+            storage: 1Gi
+

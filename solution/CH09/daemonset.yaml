@@ -18,3 +18,4 @@ spec:
         image: quay.io/prometheus/node-exporter
         ports:
         - containerPort: 9100
+
