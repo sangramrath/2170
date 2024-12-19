@@ -16,6 +16,6 @@ spec:
     spec: 
       containers: 
       - name: kcnaprep 
-        image: sangramrath/kcnaprep:1.0 
+        image: USERNAME/kcnaprep:1.0 # Replace USERNAME with the actual value
         ports: 
         - containerPort: 3000

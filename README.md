@@ -4,7 +4,6 @@
 - The `CH03` folder is the starting point for Chapter 03 exercises and has the application code that will be packaged into a Docker container.
 - The `CH09` folder is the starting point for Chapter 09 and is deliberately empty.
 - The `solution` folder is where you can find the completed YAML files (to copy from if you do not wish to create them from scratch).
-- Look for notes in the hands-on chapters for reference to the correct solution file. 
 
 ## Chapter 03 exercise to file mapping
 
